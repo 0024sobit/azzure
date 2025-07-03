@@ -254,7 +254,9 @@
     background-image:url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/386597-mobile-3-up-media-card-featured-news-bg-360x1349?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=720&hei=2643&qlt=100&fmt=png-alpha&fit=constrain);
     height: 100%;
     width: 100%;
-    background-position: center;
+    /* background-position: center; */
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 .container{
     padding-top: 56px;
@@ -485,7 +487,8 @@
 .buttonnl{
     position: absolute;
     margin-right: 40px;
-    left: 245px;
+    /* left: 245px; */
+    right: 0;
 }
 .buttonnl button{
     border: 1.600px solid #004275;
@@ -963,16 +966,18 @@
     white-space: nowrap;
     padding: 8px 0 8px 8px;
     align-items: center;
+    scrollbar-width: none;
 }
 .it{
     padding: 12px 16px 16px 16px;
-    border: 1px solid  #bdc5d2;   
+    border: 1px solid  #dbdfe5;   
 }
 
 .itti{
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom: 4px solid #004275;
+    padding: 11px 16px 14px 16px;
 }
 
 .it span{
@@ -1336,7 +1341,7 @@
     height: 100%;
     background-color: #fefefe;
     border-radius: 16px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100%;
     box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.25rem 0.5rem rgba(0, 0, 0, 0.14);
     flex-direction: column;
@@ -1844,7 +1849,9 @@
         margin: auto;
     }
     .buttonnl{
-        left:373px;
+        /* left:373px; */
+        right: 0;
+        margin: 0;
     }
     .alt{
         padding: 0;
@@ -2389,6 +2396,9 @@
         letter-spacing: -0.3px;
         padding-bottom: 3px;
     }
+    .jkg{
+        background: linear-gradient(270deg, rgb(254, 254, 254) 75%, rgba(242, 242, 242, 0) 100%);
+    }
     .jkgh{
         position: absolute;
         width: 36px;
@@ -2439,7 +2449,7 @@
         width: 30%;
     }
     .buttonnl{
-        left: 705px;
+        /* left: 705px; */
     }
     .containertwo{
         padding: 0 56px;
@@ -3106,6 +3116,9 @@
         font-weight: 400;
         padding-top: 10px;
         padding-left: 4px;
+    }
+    .overfl{
+        justify-content: center;
     }
 }
 @media (min-width:1265px) {
